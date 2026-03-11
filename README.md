@@ -21,19 +21,24 @@ The monitoring pipeline tracks:
 
 ## System Architecture
 
-Traffic Generator
-↓
-FastAPI Prediction API
-↓
-Spam Detection Model (TF-IDF + Logistic Regression)
-↓
-SQLite Monitoring Database
-↓
-CSV Export Pipeline
-↓
-Power BI Monitoring Dashboard
+The system simulates a production machine learning monitoring pipeline. Incoming requests are processed by a FastAPI service, predictions are generated using a trained spam detection model, and performance metrics are logged and visualized through a Power BI dashboard.
 
----
+### Architecture Flow
+
+```
+Traffic Simulator
+        ↓
+FastAPI Prediction API
+        ↓
+Spam Detection Model (TF-IDF + Logistic Regression)
+        ↓
+SQLite Monitoring Database
+        ↓
+CSV Export Pipeline
+        ↓
+Power BI Monitoring Dashboard
+```
+
 
 ## Tech Stack
 
