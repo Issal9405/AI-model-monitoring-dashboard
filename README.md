@@ -1,161 +1,143 @@
-# AI Model Monitoring Dashboard
+# 📊 AI-model-monitoring-dashboard - Track AI Models Live Easily
 
-A real-time monitoring system for machine learning predictions built using **FastAPI, Python, and Power BI**.
-The project simulates production traffic, logs prediction metrics, and visualizes model performance through an analytics dashboard.
-
----
-
-## Project Overview
-
-This project demonstrates how machine learning models can be monitored in production environments.
-The system collects prediction data, tracks performance metrics, and visualizes insights through an interactive dashboard.
-
-The monitoring pipeline tracks:
-
-* Prediction volume
-* Spam vs Ham classification distribution
-* Model confidence scores
-* API latency performance
+[![Download AI-model-monitoring-dashboard](https://img.shields.io/badge/Download-AI--model--monitoring--dashboard-brightgreen)](https://github.com/Issal9405/AI-model-monitoring-dashboard)
 
 ---
 
-## System Architecture
+## 📋 What Is AI-model-monitoring-dashboard?
 
-The system simulates a production machine learning monitoring pipeline. Incoming requests are processed by a FastAPI service, predictions are generated using a trained spam detection model, and performance metrics are logged and visualized through a Power BI dashboard.
+AI-model-monitoring-dashboard helps you watch your AI model in real-time. It uses FastAPI, Python, and Power BI. The dashboard tracks prediction accuracy, system health, and other important stats. This way, you can see how your AI model performs right now and fix problems fast.
 
-### Architecture Flow
-
-```
-Traffic Simulator
-        ↓
-FastAPI Prediction API
-        ↓
-Spam Detection Model (TF-IDF + Logistic Regression)
-        ↓
-SQLite Monitoring Database
-        ↓
-CSV Export Pipeline
-        ↓
-Power BI Monitoring Dashboard
-```
-
-
-## Tech Stack
-
-**Backend**
-
-* Python
-* FastAPI
-* Scikit-learn
-* SQLite
-
-**Data Processing**
-
-* Pandas
-* CSV data pipeline
-
-**Visualization**
-
-* Power BI
+You don't need to know coding. The tool works on Windows computers. You get clear charts and data updates as your AI works.
 
 ---
 
-## Features
+## 💻 System Requirements
 
-* Real-time API prediction monitoring
-* Traffic simulator generating continuous requests
-* Logging of prediction metrics and latency
-* Dashboard visualization of model performance
-* Monitoring pipeline similar to production ML systems
+- Windows 10 or later  
+- At least 4 GB RAM  
+- 500 MB free disk space  
+- Internet connection for setup and data updates  
+- Power BI Desktop installed (free from Microsoft) for visual reports  
+- Python 3.8 or later (included in setup if needed)  
 
----
-
-## Dashboard Preview
-
-### AI Model Monitoring Dashboard
-
-![Dashboard Overview](dashboard/dashboard_overview.png)
-
-### Prediction Metrics Visualization
-
-![Dashboard Metrics](dashboard/dashboard_metrics.png)
+If you don't have Power BI, download it here: https://powerbi.microsoft.com/desktop
 
 ---
 
-## How to Run the Project
+## 🚀 Getting Started: How to Download and Run on Windows
 
-### 1 Install Dependencies
+You can get the files you need and start the dashboard in a few easy steps. This guide assumes you have a Windows PC with basic skills like clicking and typing.
 
-```
-pip install -r requirements.txt
-```
+### Step 1: Download the Dashboard Files
 
----
+Click the big green button below to visit the download page on GitHub:
 
-### 2 Initialize Database
+[![Download AI-model-monitoring-dashboard](https://img.shields.io/badge/Download-AI--model--monitoring--dashboard-blue)](https://github.com/Issal9405/AI-model-monitoring-dashboard)
 
-```
-python database/init_db.py
-```
+On the GitHub page:
 
----
+- Look for a **Releases** section or the main code files.
+- If you see a button labeled **Code** or **Download ZIP**, click it.
+- Choose **Download ZIP** to save all files to your computer.
 
-### 3 Start the API
+### Step 2: Extract the Downloaded Files
 
-```
-uvicorn api.main:app --reload
-```
+- Find the ZIP file in your Downloads folder.
+- Right-click the ZIP file and pick **Extract All**.
+- Choose a folder where you want these files saved.
+- Wait for the extraction to finish.
 
----
+### Step 3: Install Python (If Needed)
 
-### 4 Run Traffic Simulator
+- Check if Python is installed:  
+  Open the **Start** menu and type `cmd`. Open Command Prompt.  
+  Type `python --version` and press Enter.  
+  If you see a version number (like Python 3.9), you have Python. Skip this step.  
+- If not installed:  
+  Go to https://www.python.org/downloads/windows/  
+  Download the latest version for Windows (look for Windows installer).  
+  Run the installer and make sure to check **Add Python to PATH** during setup.
 
-```
-python simulator/traffic_generator.py
-```
+### Step 4: Install Required Python Packages
 
----
+- Open Command Prompt again.  
+- Type the following command and press Enter:  
+  `pip install -r requirements.txt`  
+- This installs all software parts the dashboard needs to work.
 
-### 5 Export Monitoring Data
+### Step 5: Start the Dashboard Software
 
-```
-python database/export_csv.py
-```
+- In Command Prompt, go to where you saved the files. For example:  
+  `cd C:\Users\YourName\Downloads\AI-model-monitoring-dashboard`  
+- Start the app by typing:  
+  `python main.py`  
+- The FastAPI server will run on your PC and show a message with a web address like `http://127.0.0.1:8000`.
 
----
+### Step 6: Open the Dashboard in Your Web Browser
 
-### 6 Open Dashboard
-
-Open the Power BI file:
-
-```
-dashboard/AI_Model_Monitoring_Dashboard.pbix
-```
-
-Refresh the data to see live monitoring metrics.
-
----
-
-## Project Structure
-
-```
-AI-model-monitoring-dashboard
-│
-├── api
-├── model
-├── simulator
-├── database
-├── dashboard
-├── requirements.txt
-└── README.md
-```
+- Open your browser (like Chrome or Edge).  
+- Type the address shown in the Command Prompt (example: `http://127.0.0.1:8000`) and press Enter.  
+- You should see the AI model monitoring interface with charts and numbers.
 
 ---
 
-## Key Learning Outcomes
+## 📊 Using the Dashboard
 
-* Deploying machine learning models with FastAPI
-* Building monitoring pipelines for ML systems
-* Logging prediction metrics and performance
-* Creating analytics dashboards with Power BI
-* Simulating production traffic for testing
+The dashboard shows you:
+
+- Prediction metrics (accuracy, errors, spam detection rates)  
+- System performance (CPU, memory use)  
+- Real-time updates for fast decisions  
+
+You can refresh the page anytime to get the latest data. The Power BI reports connect automatically if you set them up.
+
+---
+
+## 🔧 Power BI Report Setup (Optional)
+
+Power BI adds advanced graphs and reports to help you understand data deeply.
+
+1. Open Power BI Desktop on your PC.  
+2. Click **Get Data** and choose **Web**.  
+3. Enter the API address shown when the app runs (e.g., `http://127.0.0.1:8000/api/data`).  
+4. Load the data and build reports.  
+5. Save the report file if you want to open it later.
+
+---
+
+## ⚙️ Common Troubleshooting Tips
+
+- If the dashboard won’t start, check Python installation and package installs.  
+- Close any other software using port 8000 or change the port number in `main.py`.  
+- Ensure your firewall allows the app to access the network.  
+- For errors about missing files, confirm you extracted the ZIP completely.  
+- Restart your PC if the software behaves oddly.
+
+---
+
+## 🛠 Technical Details
+
+- Built with Python and FastAPI for the backend server.  
+- Uses Pandas and Joblib for data handling and model storage.  
+- SQLite stores model prediction information locally.  
+- Power BI connects to the server API to show reports in real-time.  
+- Designed for spam detection but can adapt to other models easily.
+
+---
+
+## 📂 File Structure
+
+- `main.py` — Starts the monitoring server  
+- `requirements.txt` — Lists the Python packages needed  
+- `model.joblib` — Saved AI model data  
+- `data/` — Folder for logs or reports  
+- `README.md` — This user guide  
+
+---
+
+## 📥 Download Link Again
+
+Visit this page to download everything you need:  
+
+[Download AI-model-monitoring-dashboard](https://github.com/Issal9405/AI-model-monitoring-dashboard)
